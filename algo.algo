@@ -1,0 +1,21 @@
+ALGORITHM checkpoint
+VAR
+a : INTEGER;
+d:array_char : ARRAY_OF STRING;
+sum:=0;
+voy:=0;
+word:INTEGER;
+BEGIN
+FOR a FROM 0 TO d STEP 1 DO
+sum:= sum + a
+
+IF (d[a]) in ('a','e','i','o','u', 'A','E','I','O','U') THEN
+    voy:= voy + 1
+END_IF
+IF (d[a]) == " " THEN
+    word= word + 1
+END_IF
+END_FOR
+
+
+END
